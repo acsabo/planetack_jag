@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "options": {
+                "cwd": "${env:JAG_STUDIO}"
+            },
+            "command": "build.bat",
+            "args": [
+                "${workspaceFolderBasename}",
+                "ROM"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
